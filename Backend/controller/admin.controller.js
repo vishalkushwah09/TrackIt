@@ -67,7 +67,8 @@ export const VerifyOtpAndCreateAdmin = async (req, res) => {
 //SIGN-IN THROUGH BYCRYPT PASS AND JWT GENRATION 
 export const SignInAction = async (req, res) => {
    let { email, password, institute } = req.body;
-   let user = await Admin.findOne({ email, institute });
+   try{
+ let user = await Admin.findOne({ email, institute });
    if (!user)
       res.status(400).json({ message: "unauthorized user" });
    if (user) {
@@ -83,6 +84,12 @@ export const SignInAction = async (req, res) => {
       const token = genrateToken(payload);
       return res.status(200).json({ message: "login sucess", token: token, flag: true });
    }
+   }
+   catch(err){
+      console.error("SignInAction error:", error);
+    return res.status(500).json({ message: "Internal Server Error" });
+   }
+  
 }
 
 //SENDING THE MAILS
