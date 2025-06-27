@@ -18,6 +18,9 @@ server.use(cookieParser(    ))
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({extended:true}));
 
+server.use("/",()=>{
+    console.log("backend live");
+})
 server.use("/admin",AdminRoute);
 server.use("/user",userRouter);
 
