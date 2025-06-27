@@ -18,11 +18,12 @@
     server.use(bodyParser.json());
     server.use(bodyParser.urlencoded({extended:true}));
 
+
+    server.use("/admin",AdminRoute);
+    server.use("/user",userRouter);
     server.use("/",(req,res)=>{
         console.log("backend live");
     })
-    server.use("/admin",AdminRoute);
-    server.use("/user",userRouter);
 
     server.listen(process.env.PORT,"0.0.0.0",()=>{
         console.log("server started");
