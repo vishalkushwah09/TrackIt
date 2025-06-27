@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config()
  
-const mongo =   mongoose.connect(process.env.MONGO_PATH2).then(()=>{
+const mongo =   mongoose.connect(process.env.MONGO_URL).then(()=>{
     console.log("Databse connected successfull");
 }).catch((err)=>{
     console.log(`database connection failed ${err}`);
