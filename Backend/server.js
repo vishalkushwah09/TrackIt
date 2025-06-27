@@ -21,11 +21,11 @@
 
     server.use("/admin",AdminRoute);
     server.use("/user",userRouter);
-    server.use("/",(req,res)=>{
+    server.get("/",(req,res)=>{
         console.log("backend live");
     })
 
-    server.listen(process.env.PORT,"0.0.0.0",()=>{
+    server.listen(process.env.PORT || 4000,"0.0.0.0",()=>{
         console.log("server started");
     })
 
