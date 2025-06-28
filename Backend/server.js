@@ -12,8 +12,13 @@
     dotenv.config();
 
     const server = express();
-    server.use(cors());
-    server.use(cookieParser(    ))
+   server.use(cors({
+  origin: "https://trackit-frontend-tauz.onrender.com",
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+  }));
+   server.options("*", cors());
+   
 
     server.use(bodyParser.json());
     server.use(bodyParser.urlencoded({extended:true}));
