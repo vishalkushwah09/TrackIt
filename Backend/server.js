@@ -11,26 +11,27 @@
 
     dotenv.config();
 
+
     const server = express();
+    // server.use(cors());
+    server.use(cookieParser(    ))
 const allowedOrigins = [
-  "https://trackit-frontend-tauz.onrender.com",  
-  "http://localhost:3000"                        
+  "https://trackit-frontend-tauz.onrender.com",
+  "http://localhost:3000", 
 ];
 
-server.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
-}));
-
-server.options("*", cors());
-    server.use(cookieParser(    ))
+server.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true, 
+  })
+);
 
     server.use(bodyParser.json());
     server.use(bodyParser.urlencoded({extended:true}));
@@ -40,7 +41,6 @@ server.options("*", cors());
     server.use("/user",userRouter);
     server.get("/",(req,res)=>{
         console.log("backend live");
-          res.send("Backend is running");
     })
 
     server.listen(process.env.PORT || 4000,"0.0.0.0",()=>{
