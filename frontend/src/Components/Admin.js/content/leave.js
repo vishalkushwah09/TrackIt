@@ -277,7 +277,7 @@ const Leave = () => {
     s === "Pending" ? "#FBC02D" : s === "Approved" ? "#4CAF50" : "#E53935";
 
   return (
-    <Box sx={{ pl: "260px", py: 4, background: "linear-gradient(to right, #e3f2fd, #e1f5fe)", minHeight: "100vh" }}>
+    <Box sx={{ pl: "260px", py: 4, background: "linear-gradient(to right, #e3f2fd, #e1f5fe)",minWidth:"100vw", minHeight: "100vh" }}>
       <Header heading="📋 Leave Requests" />
 
       <Box sx={{ mt: 4 }}>
