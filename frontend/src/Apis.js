@@ -36,38 +36,38 @@
 // }
 
 export default {
-    ADMIN_SIGNUP : "https://trackit-backend-ubqy.onrender.com/admin/SignUp",
-    ADMIN_SIGNIN : "https://trackit-backend-ubqy.onrender.com/admin/SignIn",
-    ADMIN_PROFILE : "https://trackit-backend-ubqy.onrender.com/admin/profile",
-    ADMIN_VERIFY :"https://trackit-backend-ubqy.onrender.com/admin/verify-otp",
+    ADMIN_SIGNUP : "https://trackit-backend-k6xb.onrender.com/admin/SignUp",
+    ADMIN_SIGNIN : "https://trackit-backend-k6xb.onrender.com/admin/SignIn",
+    ADMIN_PROFILE : "https://trackit-backend-k6xb.onrender.com/admin/profile",
+    ADMIN_VERIFY :"https://trackit-backend-k6xb.onrender.com/admin/verify-otp",
      
-    ADMIN_CREATE_BATCH : "https://trackit-backend-ubqy.onrender.com/admin/batch",
-    ADMIN_BATCHES : "https://trackit-backend-ubqy.onrender.com/admin/batch",
-    ADMIN_Delete_BATCH : "https://trackit-backend-ubqy.onrender.com/admin/removeBatch",
+    ADMIN_CREATE_BATCH : "https://trackit-backend-k6xb.onrender.com/admin/batch",
+    ADMIN_BATCHES : "https://trackit-backend-k6xb.onrender.com/admin/batch",
+    ADMIN_Delete_BATCH : "https://trackit-backend-k6xb.onrender.com/admin/removeBatch",
     
-    ADMIN_ADDONE:"https://trackit-backend-ubqy.onrender.com/admin/addOneUser",
-    ADMIN_USER_BULK : "https://trackit-backend-ubqy.onrender.com/admin/userBulk",
-    ADMIN_USER_DELETE : "https://trackit-backend-ubqy.onrender.com/admin/removeOne",
+    ADMIN_ADDONE:"https://trackit-backend-k6xb.onrender.com/admin/addOneUser",
+    ADMIN_USER_BULK : "https://trackit-backend-k6xb.onrender.com/admin/userBulk",
+    ADMIN_USER_DELETE : "https://trackit-backend-k6xb.onrender.com/admin/removeOne",
 
-    ADMIN_LEAVES : "https://trackit-backend-ubqy.onrender.com/admin/leave",
-    ADMIN_LEAVESTATUS :"https://trackit-backend-ubqy.onrender.com/admin/status",
+    ADMIN_LEAVES : "https://trackit-backend-k6xb.onrender.com/admin/leave",
+    ADMIN_LEAVESTATUS :"https://trackit-backend-k6xb.onrender.com/admin/status",
 
-    ADMIN_USERS : "https://trackit-backend-ubqy.onrender.com/admin/allUser",
-    ADMIN_USER_BATCH :"https://trackit-backend-ubqy.onrender.com/admin/viewAttendance",
+    ADMIN_USERS : "https://trackit-backend-k6xb.onrender.com/admin/allUser",
+    ADMIN_USER_BATCH :"https://trackit-backend-k6xb.onrender.com/admin/viewAttendance",
 
 
-    ADMIN_QR :"https://trackit-backend-ubqy.onrender.com/admin/qr",
+    ADMIN_QR :"https://trackit-backend-k6xb.onrender.com/admin/qr",
     
-    ADMIN_HOLIDAY : "https://trackit-backend-ubqy.onrender.com/admin/holiday",
-   ADMIN_FORGOT : "https://trackit-backend-ubqy.onrender.com/admin/forgot",
-   ADMIN_RESET : "https://trackit-backend-ubqy.onrender.com/admin/reset",
+    ADMIN_HOLIDAY : "https://trackit-backend-k6xb.onrender.com/admin/holiday",
+   ADMIN_FORGOT : "https://trackit-backend-k6xb.onrender.com/admin/forgot",
+   ADMIN_RESET : "https://trackit-backend-k6xb.onrender.com/admin/reset",
 
-    USER_SIGNIN : "https://trackit-backend-ubqy.onrender.com/user/Login",
-    USER_PROFILE : "https://trackit-backend-ubqy.onrender.com/user/details",
-    USER_VIEW : "https://trackit-backend-ubqy.onrender.com/user/view",
-    USER_MARK :"https://trackit-backend-ubqy.onrender.com/user/mark",
-    USER_HOLI :"https://trackit-backend-ubqy.onrender.com/user/holiday",
-    USER_LEAVE :"https://trackit-backend-ubqy.onrender.com/user/leave",
-    USER_COUNT : "https://trackit-backend-ubqy.onrender.com/user/count"
+    USER_SIGNIN : "https://trackit-backend-k6xb.onrender.com/user/Login",
+    USER_PROFILE : "https://trackit-backend-k6xb.onrender.com/user/details",
+    USER_VIEW : "https://trackit-backend-k6xb.onrender.com/user/view",
+    USER_MARK :"https://trackit-backend-k6xb.onrender.com/user/mark",
+    USER_HOLI :"https://trackit-backend-k6xb.onrender.com/user/holiday",
+    USER_LEAVE :"https://trackit-backend-k6xb.onrender.com/user/leave",
+    USER_COUNT : "https://trackit-backend-k6xb.onrender.com/user/count"
    
 }
