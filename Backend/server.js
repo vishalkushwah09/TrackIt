@@ -40,6 +40,7 @@ server.options("*", cors());
     server.use("/user",userRouter);
     server.get("/",(req,res)=>{
         console.log("backend live");
+          res.send("Backend is running");
     })
 
     server.listen(process.env.PORT || 4000,"0.0.0.0",()=>{
