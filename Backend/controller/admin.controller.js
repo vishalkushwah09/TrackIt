@@ -66,8 +66,9 @@ export const VerifyOtpAndCreateAdmin = async (req, res) => {
 
 //SIGN-IN THROUGH BYCRYPT PASS AND JWT GENRATION 
 export const SignInAction = async (req, res) => {
-   let { email, password, institute } = req.body;
+ 
    try{
+        let { email, password, institute } = req.body;
  let user = await Admin.findOne({ email, institute });
    if (!user)
       res.status(400).json({ message: "unauthorized user" });
