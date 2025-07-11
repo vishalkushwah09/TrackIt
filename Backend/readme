@@ -1,0 +1,16 @@
+// USER 
+//   1. attendence mark frontend validation (geolocation,same date,and timing late or present)
+
+//   ADMIN
+
+//   COMPLETE
+//     SIGN-UP WITH JWT AND EMAIL VERIFICATION
+//     SIGN-IN THROUGH BYCRYPT PASS AND JWT GENRATION
+//     ADMIN CREATE BATCHES 
+//     SENDING THE MAILS
+//     ADD USERS(By EXEL)
+//     FETCH ALL USER FROM BATCH 
+//     GET DETAIL OF ONE USER
+
+    
+
