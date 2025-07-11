@@ -6,4 +6,5 @@ import path from "path";
     filename:(req,file,cb)=>cb(null,Date.now()+ path.extname(file.originalname))
  });
  const upload = multer({storage});
+ 
  export default upload;
